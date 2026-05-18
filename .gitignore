@@ -1,0 +1,1 @@
+# Ignore macOS and Windows system files\n.DS_Store\nThumbs.db\n# Ignore editor folders\n.vscode/\n# Ignore local environment files\n.env\n
