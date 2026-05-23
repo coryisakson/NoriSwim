@@ -4,125 +4,753 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Swim Nori | Luxury Kids Swim Goggles</title>
-  <meta name="description" content="Swim Nori is luxury swim goggles for kids built for comfort, fit, leak resistance, and elevated design." />
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Swim Nori is the premium kids swim company. Comfort-first fabric straps, wide bridge leak-resistant seals, and AirPods-inspired magnetic silicone cases. Sustainable & plastic-free." />
+  <meta name="keywords" content="swim nori, kids swim goggles, fabric strap goggles, no pull swim goggles, premium kids swim, sustainable kids goggles" />
+  <meta name="author" content="Swim Nori" />
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Swim Nori | Luxury Kids Swim Goggles" />
+  <meta property="og:description" content="Goggles kids actually keep on. Built for comfort, leak resistance, and premium aesthetics." />
+  <meta property="og:image" content="images/nori_goggles_front_protection.jpeg" />
+  <meta property="og:url" content="http://SwimNori.com" />
+  
+  <!-- Style Sheet -->
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="brand">
-      <span class="badge">Swim Nori</span>
-      <p>Luxury swim goggles for kids that are built around comfort, performance, and premium design.</p>
-    </div>
-    <nav>
-      <a href="#why">Why</a>
-      <a href="#design">Design</a>
-      <a href="#packaging">Packaging</a>
-      <a href="#join">Join</a>
+
+  <!-- Sticky Glassmorphism Header -->
+  <header class="site-header" id="siteHeader">
+    <a href="#" class="brand-wrapper" id="brandLogo">
+      <img src="images/nori_swim_logo.jpeg" alt="Nori Swim Logo" class="brand-logo-img" />
+      <div class="brand-name">
+        nori swim
+        <span class="brand-tagline">luxury kids swim</span>
+      </div>
+    </a>
+    
+    <nav class="nav-links">
+      <a href="#why">Why Nori</a>
+      <a href="#innovations">Innovations</a>
+      <a href="#unboxing">Unboxing</a>
+      <a href="#join" class="header-cta">Reserve Now</a>
     </nav>
   </header>
 
   <main>
-    <section class="hero">
+    <!-- HERO SECTION -->
+    <section class="section hero">
       <div class="hero-copy">
-        <p class="eyebrow">Introducing the next premium kids swim brand</p>
-        <h1>Goggles kids actually Lee on</h1>
-        <p>Swim Nori brings luxury comfort, elevated colorways, and smarter fit to the kids swim category — without sacrificing performance or sustainability.</p>
+        <span class="eyebrow">Redefining youth swim gear</span>
+        <h1>Goggles kids<span>actually keep on.</span></h1>
+        <p>Swim Nori elevates the kids' category with luxury comfort, bio-based fabric straps, and leak-resistant seals — designed for ultimate adventure without pulling hair or plastic packaging waste.</p>
         <div class="hero-actions">
-          <a class="button primary" href="#join">Join the waitlist</a>
-          <a class="button secondary" href="#design">See the design</a>
+          <a class="btn btn-primary" href="#join">Reserve Your Pair</a>
+          <a class="btn btn-secondary" href="#innovations">Explore the Design</a>
+        </div>
+        
+        <div class="hero-bullets">
+          <div class="hero-bullet-item">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+            </svg>
+            No Hair Pulling
+          </div>
+          <div class="hero-bullet-item">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+            </svg>
+            Wide Bridge Seal
+          </div>
+          <div class="hero-bullet-item">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+            </svg>
+            Plastic-Free Box
+          </div>
         </div>
       </div>
+
+      <!-- HERO RENDERS CAROUSEL -->
       <div class="hero-visual">
-        <div class="goggle-card">
-          <div class="goggle-band"></div>
-          <div class="lens lens-left"></div>
-          <div class="lens lens-right"></div>
-          <div class="goggle-bridge"></div>
-          <div class="strap"></div>
+        <div class="carousel-container" id="heroCarousel">
+          <div class="carousel-track">
+            
+            <!-- Slide 1: Front Protection -->
+            <div class="carousel-slide active" data-index="0">
+              <img src="images/nori_goggles_front_protection.jpeg" class="carousel-image" alt="Nori front view" />
+              <div class="carousel-caption">
+                <h4>Crystal Clear Protection</h4>
+                <p>99%-100% UVA/UVB protection engineered specifically for youth adventure.</p>
+              </div>
+            </div>
+            
+            <!-- Slide 2: Kraft Box Green -->
+            <div class="carousel-slide" data-index="1">
+              <img src="images/nori_kraft_box_packaging.jpeg" class="carousel-image" alt="Kraft box packaging" />
+              <div class="carousel-caption">
+                <h4>Kraft Cardboard Packaging</h4>
+                <p>100% recyclable, zero-plastic packaging printed with soy-based inks.</p>
+              </div>
+            </div>
+            
+            <!-- Slide 3: Magnetic Case -->
+            <div class="carousel-slide" data-index="2">
+              <img src="images/nori_magnetic_silicone_case.jpeg" class="carousel-image" alt="Magnetic carry case" />
+              <div class="carousel-caption">
+                <h4>Magnetic Silicone Carry Case</h4>
+                <p>Built-in magnets guide the lid into place for a satisfying, secure closure.</p>
+              </div>
+            </div>
+            
+            <!-- Slide 4: Blush Pink Box -->
+            <div class="carousel-slide" data-index="3">
+              <img src="images/nori_blush_pink_packaging.jpeg" class="carousel-image" alt="Blush pink box render" />
+              <div class="carousel-caption">
+                <h4>Blush Pink Colorway</h4>
+                <p>Sleek and elevated design paired with a custom protective zippered pouch.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Carousel Controls -->
+          <button class="carousel-btn carousel-btn-prev" id="carouselPrevBtn" aria-label="Previous Render">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" style="width: 20px; height: 20px;">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+            </svg>
+          </button>
+          <button class="carousel-btn carousel-btn-next" id="carouselNextBtn" aria-label="Next Render">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" style="width: 20px; height: 20px;">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>
+          </button>
+          
+          <!-- Indicators -->
+          <div class="carousel-indicators" id="carouselIndicators">
+            <button class="indicator-dot active" data-slide="0" aria-label="Slide 1"></button>
+            <button class="indicator-dot" data-slide="1" aria-label="Slide 2"></button>
+            <button class="indicator-dot" data-slide="2" aria-label="Slide 3"></button>
+            <button class="indicator-dot" data-slide="3" aria-label="Slide 4"></button>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="why" class="section feature-grid">
-      <div class="section-copy">
-        <p class="eyebrow">Why Swim Nori</p>
-        <h2>Parents want comfort, no leaks, and premium style.</h2>
-        <p>Existing kids goggles pull hair, leak easily, feel cheap, and fail to deliver the easy fit families need. Swim Nori is designed to solve all of those pain points while standing out on shelf.</p>
+    <!-- SECTION: WHY SWIM NORI -->
+    <section id="why" class="section">
+      <div class="section-header">
+        <span class="eyebrow">The Nori Standard</span>
+        <h2>Designed to solve the real problems families face.</h2>
+        <p>Let's face it: cheap, uncomfortable goggles end up on the pool deck. Swim Nori is meticulously engineered to address every frustration parent and child experience.</p>
       </div>
-      <div class="features">
-        <article>
-          <h3>Comfort-first fit</h3>
-          <p>Wider bridge seals and a soft, fabric back strap reduce pressure and keep goggles gentle on little faces.</p>
-        </article>
-        <article>
-          <h3>Leak resistant seal</h3>
-          <p>More contact area means better leak protection without extra tightness around the eyes.</p>
-        </article>
-        <article>
-          <h3>Luxury colorways</h3>
-          <p>Muted sky blue, blush pink, and kid-friendly green look elevated and feel premium, not toy-like.</p>
-        </article>
-      </div>
-    </section>
 
-    <section id="design" class="section split-panel">
-      <div>
-        <p class="eyebrow">Design story</p>
-        <h2>A premium kids goggle that feels thoughtfully designed.</h2>
-        <p>Swim Nori brings a wider seal shape to the youth category, plus a unique soft fabric strap made for comfort and reliability. This is luxury swimwear designed for kids, not a smaller adult product.</p>
-        <ul>
-          <li>Bio-based TPU strap option for premium sustainability</li>
-          <li>Soft, non-pulling strap that stays secure</li>
-          <li>Anti-fog ready lenses and a clean silhouette</li>
-        </ul>
-      </div>
-      <div class="panel-cards">
-        <div class="panel-card">
-          <h3>More leak resistance</h3>
-          <p>Wider bridge and larger seal area work together to keep water out without adding pressure.</p>
+      <!-- Problem vs Solution Comparison Grid -->
+      <div class="problems-solutions">
+        
+        <!-- Typical Goggles -->
+        <div class="comp-card comp-card-typical">
+          <h3>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width: 26px; height: 26px;">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" />
+            </svg>
+            Typical Kids' Goggles
+          </h3>
+          <ul class="comp-list">
+            <li class="comp-item">
+              <span class="comp-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" style="width: 18px; height: 18px;">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </span>
+              <div class="comp-text">
+                <h4>Hair Pulling Straps</h4>
+                <p>Elastic silicone bands grab, tangle, and painfully rip fine hair during adjustments.</p>
+              </div>
+            </li>
+            <li class="comp-item">
+              <span class="comp-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" style="width: 18px; height: 18px;">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </span>
+              <div class="comp-text">
+                <h4>Constant Leaks</h4>
+                <p>Narrow lens bridges fail to accommodate children's faces, leading to constant water flooding.</p>
+              </div>
+            </li>
+            <li class="comp-item">
+              <span class="comp-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" style="width: 18px; height: 18px;">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </span>
+              <div class="comp-text">
+                <h4>Single-Use Plastic Boxes</h4>
+                <p>Hard plastic clamshells go straight to the landfill immediately after purchase.</p>
+              </div>
+            </li>
+          </ul>
         </div>
-        <div class="panel-card">
-          <h3>Premium packaging</h3>
-          <p>Recyclable cardboard and soy-based ink create a standout unboxing experience that feels high-end and intentional.</p>
+
+        <!-- Swim Nori Goggles -->
+        <div class="comp-card comp-card-nori">
+          <h3>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width: 26px; height: 26px;">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
+            </svg>
+            The Nori Solution
+          </h3>
+          <ul class="comp-list">
+            <li class="comp-item">
+              <span class="comp-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" style="width: 18px; height: 18px;">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                </svg>
+              </span>
+              <div class="comp-text">
+                <h4>Premium Fabric & Bio-TPU Strap</h4>
+                <p>Silky, soft fabric wraps around the back smoothly, ensuring no pulling, ripping, or slipping.</p>
+              </div>
+            </li>
+            <li class="comp-item">
+              <span class="comp-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" style="width: 18px; height: 18px;">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                </svg>
+              </span>
+              <div class="comp-text">
+                <h4>Leak-Resistant Wide Bridge</h4>
+                <p>Wide-set adult goggle shape adapted for kids, maximizing surface area for a robust, water-tight seal.</p>
+              </div>
+            </li>
+            <li class="comp-item">
+              <span class="comp-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" style="width: 18px; height: 18px;">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                </svg>
+              </span>
+              <div class="comp-text">
+                <h4>Eco Kraft Cardboard Boxes</h4>
+                <p>100% zero-plastic boxes printed with natural soy-based inks. High-end, guilt-free luxury packaging.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- SECTION: INNOVATIONS & DEEP DIVES -->
+    <section id="innovations" class="section">
+      <div class="section-header">
+        <span class="eyebrow">Product Innovations</span>
+        <h2>Precision engineering for little explorers.</h2>
+        <p>Take a closer look at the key design features that make Swim Nori a luxury standard in the youth swim industry.</p>
+      </div>
+
+      <!-- DEEP DIVE 1: STRAP DESIGN & FABRIC INNOVATION -->
+      <div class="showcase-grid">
+        <div class="showcase-visual">
+          <img src="images/nori_strap_adjustment_concepts.jpeg" alt="Strap concepts adjustment" />
+        </div>
+        <div class="showcase-copy">
+          <span class="eyebrow">Patent-Pending Strap Comfort</span>
+          <h3>Silky Fabric Adjustment Concepts</h3>
+          <p>We are reimagining youth headwear. Instead of hair-tangled rubber, Nori Swim features a durable, soft fabric strap made from Bio-based TPU. It provides perfect stretch, custom grip, and is gentle on every hair type.</p>
+          
+          <!-- Interactive Concept Tabs -->
+          <div class="concept-tabs">
+            <button class="tab-btn active" onclick="switchConcept('concept1')">Concept 1: Tri-Glide</button>
+            <button class="tab-btn" onclick="switchConcept('concept2')">Concept 2: Snap-Lock</button>
+          </div>
+          
+          <!-- Tab 1 -->
+          <div class="tab-content active" id="concept1">
+            <ul class="spec-list">
+              <li class="spec-item">
+                <span class="spec-badge">1</span>
+                <div class="spec-text">
+                  <h5>Friction-Lock Tri-Glide Slider</h5>
+                  <p>Simple, intuitive, and highly secure. Low-profile fit with zero moving pieces to break.</p>
+                </div>
+              </li>
+              <li class="spec-item">
+                <span class="spec-badge">2</span>
+                <div class="spec-text">
+                  <h5>Internal Silicone Gripping</h5>
+                  <p>Subtle, soft silicone waves on the strap's inside prevent self-adjustment and slipping in the water.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          
+          <!-- Tab 2 -->
+          <div class="tab-content" id="concept2">
+            <ul class="spec-list">
+              <li class="spec-item">
+                <span class="spec-badge">1</span>
+                <div class="spec-text">
+                  <h5>Snap-Lock Cover Adjuster</h5>
+                  <p>Lid lifts easily to adjust fabric length, then snaps shut with a satisfying click, locking the strap in place.</p>
+                </div>
+              </li>
+              <li class="spec-item">
+                <span class="spec-badge">2</span>
+                <div class="spec-text">
+                  <h5>Worry-Free Lock System</h5>
+                  <p>Perfect for rigorous open-water or active diving. Built to withstand children's active movement.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- DEEP DIVE 2: LEAK-RESISTANT LENS DESIGN -->
+      <div class="showcase-grid">
+        <div class="showcase-visual">
+          <img src="images/nori_goggles_front_protection.jpeg" alt="Goggles front seal" />
+        </div>
+        <div class="showcase-copy">
+          <span class="eyebrow">Advanced Seal Shape</span>
+          <h3>Wide Bridge Seal & UV Protection</h3>
+          <p>Most kids' goggles leak because their bridge and suction surface areas are too narrow. Swim Nori utilizes a premium wide-bridge layout previously reserved for expensive adult racing goggles. This distributes seal suction safely across more facial surface area, dramatically reducing leaking and pressure rings.</p>
+          
+          <ul class="spec-list">
+            <li class="spec-item">
+              <span class="spec-badge">UV</span>
+              <div class="spec-text">
+                <h5>Crystal Clear UVA & UVB Protection</h5>
+                <p>Exceeds international safety standards (ISO 12312-1:2022, FDA, and CE approved). Filters 99%-100% of harmful rays.</p>
+              </div>
+            </li>
+            <li class="spec-item">
+              <span class="spec-badge">AF</span>
+              <div class="spec-text">
+                <h5>Anti-Fog Coated Lenses</h5>
+                <p>Keeps water droplets flat on the lens so children don't feel tempted to take goggles off to wipe them.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- DEEP DIVE 3: THE AIRPODS-INSPIRED CASE -->
+      <div class="showcase-grid">
+        <div class="showcase-visual">
+          <img src="images/nori_magnetic_silicone_case.jpeg" alt="Magnetic carry case colors" />
+        </div>
+        <div class="showcase-copy">
+          <span class="eyebrow">Magnetic Accessories</span>
+          <h3>AirPods-Inspired Ventilated Goggle Case</h3>
+          <p>Every premium product deserves a satisfying home. Included in our premium launch bundle is a medical-grade waterproof silicone carrying case equipped with built-in alignment magnets.</p>
+          
+          <div class="case-badge-container">
+            <span class="case-badge">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+              </svg>
+              Built-in Magnets
+            </span>
+            <span class="case-badge">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 3.03v.568c0 .334.148.65.405.864l4.017 3.348a1.125 1.125 0 01.404.864v.568" />
+              </svg>
+              Tiny Airflow Vents
+            </span>
+            <span class="case-badge">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" />
+              </svg>
+              Anti-Mildew Protection
+            </span>
+          </div>
+
+          <ul class="spec-list">
+            <li class="spec-item">
+              <span class="spec-badge">M</span>
+              <div class="spec-text">
+                <h5>Satisfying Snap-Fit Magnet Lid</h5>
+                <p>Guided magnets snap the lid closed instantly, keeping goggles protected and secure inside beach or school bags.</p>
+              </div>
+            </li>
+            <li class="spec-item">
+              <span class="spec-badge">V</span>
+              <div class="spec-text">
+                <h5>Ventilated & Drainage Friendly</h5>
+                <p>Micro-ventilation holes ensure continuous airflow, allowing wet goggles to dry naturally and preventing mildew build-up.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- SECTION: UNBOXING & SUSTAINABILITY -->
+    <section id="unboxing" class="section">
+      <div class="section-header">
+        <span class="eyebrow">Unboxing Experience</span>
+        <h2>Better for kids. Kinder to Earth.</h2>
+        <p>Swim Nori will stand out beautifully on typical Target retail shelves. We reject toxic plastic blister packaging and instead house all of our items in beautifully printed, completely recyclable kraft paper boxes.</p>
+      </div>
+
+      <div class="packaging-showcase">
+        <!-- Packaging Box 1 -->
+        <div class="pkg-card">
+          <img src="images/nori_kraft_box_packaging.jpeg" alt="Kraft box packaging render" />
+          <div class="pkg-details">
+            <h4>Eco Kraft Presentation Box</h4>
+            <p>Made from organic, unbleached FSC certified recycled papers. Minimal ink usage ensures safe and chemical-free recycling.</p>
+          </div>
+        </div>
+
+        <!-- Packaging Box 2 -->
+        <div class="pkg-card">
+          <img src="images/nori_blush_pink_packaging.jpeg" alt="Blush pink box render" />
+          <div class="pkg-details">
+            <h4>Premium Colorways & Soy Inks</h4>
+            <p>Our boxes are printed exclusively with renewable, vegetable soy-based inks. Clean, elegant, and perfectly premium.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="packaging" class="section color-section">
-      <p class="eyebrow">Packaging & unboxing</p>
-      <h2>Elevated materials, sustainable presentation.</h2>
-      <p>A recyclable cardboard box, soft printed details, and optional magnetic case support Swim Nori’s premium price point and packaging story.</p>
-      <div class="colorways">
-        <div class="color-swatch swatch-blue"><span>Sky Blue</span></div>
-        <div class="color-swatch swatch-pink"><span>Blush Pink</span></div>
-        <div class="color-swatch swatch-green"><span>Muted Green</span></div>
-      </div>
-    </section>
+    <!-- SECTION: INTERACTIVE WAITLIST INTEREST -->
+    <section id="join" class="section">
+      <div class="waitlist-container">
+        
+        <div class="waitlist-copy">
+          <span class="eyebrow">Reserve Your Set</span>
+          <h2>Join the waitlist. Gather premium interest.</h2>
+          <p>We are currently establishing our initial manufacturing volumes and analyzing global production costs to ensure high-end sustainability and premium delivery. Sign up below to secure your place in our launch wave and select your custom colorway.</p>
+          
+          <div class="price-justify-card">
+            <div class="price-tag">
+              <span class="price-amount">$55</span>
+              <span class="price-sub">Launch Price</span>
+            </div>
+            <p>Includes Swim Nori premium goggles, a bio-based fabric strap, our patent-pending secure adjuster clip, and the AirPods-inspired magnetic ventilated silicone carry case ($75 retail value).</p>
+          </div>
+        </div>
 
-    <section class="section stats-panel">
-      <div>
-        <h2>Built around the real problems families face.</h2>
-        <p>Swim Nori is more than a product — it’s a premium swim solution for kids who deserve a better fit, a better feel, and a better look.</p>
-      </div>
-      <div class="stats-grid">
-        <div><strong>Less hair pull</strong><span>Fabric strap engineered to move with the head.</span></div>
-        <div><strong>More durability</strong><span>Thoughtful materials designed for repeated pool days.</span></div>
-        <div><strong>Strong shelf presence</strong><span>Luxury branding that stands out against common plastic packaging.</span></div>
-      </div>
-    </section>
+        <!-- Waitlist Form Card -->
+        <div class="waitlist-form-card" id="waitlistFormCard">
+          
+          <!-- Standard Form State -->
+          <form id="interestForm" onsubmit="handleWaitlistSubmit(event)">
+            <h4>Swim Nori Early Reservation</h4>
+            
+            <div class="form-group">
+              <label class="form-label">1. Choose Your Launch Colorway</label>
+              <div class="color-options">
+                
+                <!-- Sky Blue -->
+                <div class="color-option-wrapper">
+                  <input type="radio" id="colorBlue" name="preferredColor" value="Sky Blue" class="color-option-input" checked onchange="updateFormTheme('blue')" />
+                  <label for="colorBlue" class="color-option-label">
+                    <span class="color-dot dot-blue"></span>
+                    <span class="color-name">Sky Blue</span>
+                  </label>
+                </div>
+                
+                <!-- Blush Pink -->
+                <div class="color-option-wrapper">
+                  <input type="radio" id="colorPink" name="preferredColor" value="Blush Pink" class="color-option-input" onchange="updateFormTheme('pink')" />
+                  <label for="colorPink" class="color-option-label">
+                    <span class="color-dot dot-pink"></span>
+                    <span class="color-name">Blush Pink</span>
+                  </label>
+                </div>
+                
+                <!-- Muted Green -->
+                <div class="color-option-wrapper">
+                  <input type="radio" id="colorGreen" name="preferredColor" value="Muted Green" class="color-option-input" onchange="updateFormTheme('green')" />
+                  <label for="colorGreen" class="color-option-label">
+                    <span class="color-dot dot-green"></span>
+                    <span class="color-name">Sage Green</span>
+                  </label>
+                </div>
+                
+                <!-- Oat -->
+                <div class="color-option-wrapper">
+                  <input type="radio" id="colorOat" name="preferredColor" value="Oat" class="color-option-input" onchange="updateFormTheme('oat')" />
+                  <label for="colorOat" class="color-option-label">
+                    <span class="color-dot dot-oat"></span>
+                    <span class="color-name">Oat Cream</span>
+                  </label>
+                </div>
 
-    <section id="join" class="section cta-section">
-      <div>
-        <p class="eyebrow">Next step</p>
-        <h2>Ready to bring Swim Nori to swim families.</h2>
-        <p>We’re preparing the launch and manufacturing details now. Join the early interest list to stay updated on pricing, availability, and launch milestones.</p>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="parentName" class="form-label">Parent's Full Name</label>
+              <input type="text" id="parentName" required class="form-input" placeholder="e.g. Mariel Isakson" />
+            </div>
+
+            <div class="form-group">
+              <label for="parentEmail" class="form-label">Email Address</label>
+              <input type="email" id="parentEmail" required class="form-input" placeholder="e.g. mariel@swimnori.com" />
+            </div>
+
+            <button type="submit" class="form-submit-btn" id="submitBtn">
+              Reserve My Launch Slot
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" style="width: 18px; height: 18px;">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </button>
+          </form>
+
+          <!-- Success Card State -->
+          <div class="success-card" id="successState">
+            <div class="success-icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" style="width: 40px; height: 40px;">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+            </div>
+            <h3>You are on the waitlist!</h3>
+            <p>Thank you for your interest! Your reservation has been secured in our system. We will reach out as soon as early production begins.</p>
+            
+            <div class="success-summary-card">
+              <div class="summary-row">
+                <span class="summary-label">Reservation ID</span>
+                <span class="summary-val" id="resID">#NORI-9382</span>
+              </div>
+              <div class="summary-row">
+                <span class="summary-label">Reserved Colorway</span>
+                <span class="summary-val">
+                  <span class="summary-color-badge" id="resColorBadge">
+                    <span class="summary-color-dot" id="resColorDot"></span>
+                    <span id="resColorName">Sky Blue</span>
+                  </span>
+                </span>
+              </div>
+              <div class="summary-row">
+                <span class="summary-label">Priority Status</span>
+                <span class="summary-val" style="color: var(--nori-green);">VIP Launch Wave</span>
+              </div>
+            </div>
+
+            <span class="success-badge">1 of 1,248 Swim Families</span>
+          </div>
+
+        </div>
+
       </div>
-      <a class="button primary" href="mailto:hello@swimnori.com">Contact us</a>
     </section>
   </main>
 
+  <!-- LUXURY FOOTER -->
   <footer class="site-footer">
-    <p>Swim Nori &bull; Premium kids goggles designed for comfort, performance, and sustainability.</p>
+    <div class="footer-content">
+      <div class="footer-brand">
+        <a href="#" class="brand-wrapper">
+          <img src="images/nori_swim_logo.jpeg" alt="Nori Swim Logo" class="brand-logo-img" />
+          <div class="brand-name" style="font-size: 1.35rem;">
+            nori swim
+          </div>
+        </a>
+        <p>The premium kids swim company. Elevated, leak-resistant, anti-fog, and completely hair-friendly.</p>
+      </div>
+
+      <div class="footer-links">
+        <h5>Brand Values</h5>
+        <ul>
+          <li><a href="#why">Why Comfort First</a></li>
+          <li><a href="#innovations">Fabric Headbands</a></li>
+          <li><a href="#unboxing">Soy Inks & Cardboard</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="http://SwimNori.com">SwimNori.com</a></li>
+          <li><a href="#join">Reserve Waitlist</a></li>
+          <li><a href="mailto:hello@swimnori.com">Contact Manufacturing</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Swim Nori. Designed in California. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="#" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width: 20px; height: 20px;">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zM17.5 6.5h.01" />
+          </svg>
+        </a>
+        <a href="#" aria-label="Twitter">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width: 20px; height: 20px;">
+            <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+          </svg>
+        </a>
+      </div>
+    </div>
   </footer>
+
+  <!-- DYNAMIC LOGIC AND INTERACTIVE CODE -->
+  <script>
+    // Header Scroll Effect
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('siteHeader');
+      if (window.scrollY > 40) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // 1. CAROUSEL LOGIC
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.carousel-slide');
+    const dots = document.querySelectorAll('.indicator-dot');
+    const totalSlides = slides.length;
+    let carouselInterval;
+
+    function showSlide(index) {
+      if (index >= totalSlides) index = 0;
+      if (index < 0) index = totalSlides - 1;
+      
+      slides.forEach(slide => slide.classList.remove('active'));
+      dots.forEach(dot => dot.classList.remove('active'));
+      
+      slides[index].classList.add('active');
+      dots[index].classList.add('active');
+      currentSlide = index;
+    }
+
+    function nextSlide() {
+      showSlide(currentSlide + 1);
+    }
+
+    function prevSlide() {
+      showSlide(currentSlide - 1);
+    }
+
+    // Event Listeners for Carousel
+    document.getElementById('carouselNextBtn').addEventListener('click', () => {
+      nextSlide();
+      resetCarouselTimer();
+    });
+    
+    document.getElementById('carouselPrevBtn').addEventListener('click', () => {
+      prevSlide();
+      resetCarouselTimer();
+    });
+
+    dots.forEach((dot, idx) => {
+      dot.addEventListener('click', () => {
+        showSlide(idx);
+        resetCarouselTimer();
+      });
+    });
+
+    function startCarouselTimer() {
+      carouselInterval = setInterval(nextSlide, 5000); // Shift every 5s
+    }
+
+    function resetCarouselTimer() {
+      clearInterval(carouselInterval);
+      startCarouselTimer();
+    }
+
+    startCarouselTimer();
+
+    // 2. STRAP CONCEPT TABS LOGIC
+    function switchConcept(conceptId) {
+      // Deactivate all tabs
+      const tabBtns = document.querySelectorAll('.tab-btn');
+      const tabContents = document.querySelectorAll('.tab-content');
+      
+      tabBtns.forEach(btn => btn.classList.remove('active'));
+      tabContents.forEach(content => content.classList.remove('active'));
+      
+      // Activate clicked tab
+      if (conceptId === 'concept1') {
+        tabBtns[0].classList.add('active');
+        document.getElementById('concept1').classList.add('active');
+      } else {
+        tabBtns[1].classList.add('active');
+        document.getElementById('concept2').classList.add('active');
+      }
+    }
+
+    // 3. WAITLIST FORM COLOR WAY THEMES
+    const formCard = document.getElementById('waitlistFormCard');
+    
+    // Set initial theme
+    formCard.classList.add('theme-blue');
+
+    function updateFormTheme(colorTheme) {
+      // Remove previous themes
+      formCard.classList.remove('theme-blue', 'theme-pink', 'theme-green', 'theme-oat');
+      
+      // Add new theme
+      formCard.classList.add(`theme-${colorTheme}`);
+    }
+
+    // 4. WAITLIST SUBMIT & LOCAL STORAGE DATABASE LOGIC
+    function handleWaitlistSubmit(event) {
+      event.preventDefault();
+      
+      const parentNameInput = document.getElementById('parentName').value;
+      const parentEmailInput = document.getElementById('parentEmail').value;
+      const preferredColorInput = document.querySelector('input[name="preferredColor"]:checked').value;
+      
+      // Input Validation
+      if (!parentNameInput.trim() || !parentEmailInput.trim()) {
+        alert('Please fill out all the fields.');
+        return;
+      }
+      
+      // Generate a mock reservation ID
+      const randomID = Math.floor(1000 + Math.random() * 9000);
+      const resIDStr = `#NORI-${randomID}`;
+      
+      // Save data object to LocalStorage as a working mock database
+      const interestEntry = {
+        id: resIDStr,
+        name: parentNameInput,
+        email: parentEmailInput,
+        colorway: preferredColorInput,
+        timestamp: new Date().toISOString()
+      };
+      
+      // Retrieve existing list or create new one
+      const existingEntries = JSON.parse(localStorage.getItem('swimNoriReservations') || '[]');
+      existingEntries.push(interestEntry);
+      localStorage.setItem('swimNoriReservations', JSON.stringify(existingEntries));
+      
+      // Log entries count in console
+      console.log('Successfully recorded early reservation:', interestEntry);
+      console.log('Total entries in local storage database:', existingEntries.length);
+      
+      // Inject success card values
+      document.getElementById('resID').innerText = resIDStr;
+      document.getElementById('resColorName').innerText = preferredColorInput;
+      
+      // Color Dot match in success summary
+      const dot = document.getElementById('resColorDot');
+      if (preferredColorInput === 'Sky Blue') {
+        dot.style.backgroundColor = '#8aa8bc';
+      } else if (preferredColorInput === 'Blush Pink') {
+        dot.style.backgroundColor = '#d9a9b4';
+      } else if (preferredColorInput === 'Muted Green') {
+        dot.style.backgroundColor = '#9db6a0';
+      } else {
+        dot.style.backgroundColor = '#ded2be'; // Oat
+      }
+      
+      // Transition Form -> Success Screen
+      document.getElementById('interestForm').style.display = 'none';
+      document.getElementById('successState').style.display = 'block';
+    }
+  </script>
 </body>
 </html>

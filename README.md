@@ -7,12 +7,27 @@ A static brochure site for Swim Nori, a luxury kids swim goggles brand designed 
 - `index.html` — landing page content
 - `styles.css` — responsive styles and branding
 - `CNAME` — custom domain for GitHub Pages
+- `docker-compose.yml` — local hosting with `nginx:alpine`
 
 ## Deploying to GitHub Pages
 
 1. Push this repository to GitHub.
 2. In the repository settings, enable GitHub Pages from the `main` branch.
 3. The `CNAME` file points the site to `swimnori.com`.
+
+## Local hosting with Docker Compose
+
+Run the following from the project root:
+
+```bash
+docker compose up --build
+```
+
+Then open:
+
+```text
+http://localhost:8080
+```
 
 ## Notes
 
